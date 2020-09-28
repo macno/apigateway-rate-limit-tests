@@ -1,0 +1,21 @@
+{
+  "name": "apigateway-rate-limit-tests",
+  "version": "0.1.0",
+  "description": "tests for the Wikimedia API gateway",
+  "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "test",
+    "api",
+    "gateway",
+    "ratelimit"
+  ],
+  "author": "Evan Prodromou",
+  "license": "CC0-1.0"
+}
