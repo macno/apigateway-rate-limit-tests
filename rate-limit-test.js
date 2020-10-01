@@ -58,7 +58,7 @@ if (token) {
 
 let id = setInterval(() => {
     const tick = Date.now()
-    if (tick - start >= THREE_HOURS) {
+    if (tick - start >= duration) {
         clearInterval(id)
     } else {
         const i = Math.floor(Math.random() * Math.floor(endpoints.length))
