@@ -31,10 +31,18 @@ let interval = 500
 
 if (process.argv.length > 2) {
     duration = parseInt(process.argv[2], 10) * 1000
+    if(isNaN(duration)) {
+       console.error('Invalid duration');
+       process.exit(1);
+    }
 }
 
 if (process.argv.length > 3) {
     interval = parseInt(process.argv[3], 10)
+    if(isNaN(interval)) {
+       console.error('Invalid interval');
+       process.exit(1);
+    }
 }
 
 if (process.argv.length > 4) {
